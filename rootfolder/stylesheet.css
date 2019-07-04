@@ -101,6 +101,9 @@ input, select {
 }
 
 /*My Code */
+body{background-color: #9A9A9A;
+}
+
 .header {
   background-color:#f2f2f2;
   text-align: center;
@@ -113,7 +116,6 @@ input, select {
   border-bottom: solid black 1px;
   font-size: 60px;
   font-family: arial, sans-serif;
-  margin-bottom: 10px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -121,18 +123,17 @@ input, select {
   background-color: #f1f1f1;
   font-size: 40px;
   font-family: arial, sans-serif;
-  border-bottom: solid black 1px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .wrapper {
-  background-color:#f2f2f2;
+  background-color:#dfdfdf;
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
   width:100%;
   max-width: 1300px;
+  margin-top:10px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
@@ -140,12 +141,13 @@ input, select {
 
 .img-pro1 {
   flex-basis: 50%;
-  width:300px;
+  max-width:300px;
   height:300px;
   margin:0px;
   margin-left:5px;
   margin-right: 0px;
   margin-bottom: 10px;
+  margin-top: 10px;
   background-image: url(img/Lars.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -155,11 +157,12 @@ input, select {
 .img-pro2 {
   flex-basis: 50%;
   max-width:300px;
-  max-height:300px;
+  height:300px;
   margin:0px;
   margin-left:5px;
   margin-right: 0px;
   margin-bottom: 10px;
+  margin-top: 10px;
   background-image: url(img/James.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -169,11 +172,12 @@ input, select {
 .img-pro3 {
   flex-basis: 50%;
   max-width:300px;
-  max-height:300px;
+  height:300px;
   margin:0px;
   margin-left:5px;
   margin-right: 0px;
   margin-bottom: 10px;
+  margin-top: 10px;
   background-image: url(img/Josh.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -183,11 +187,12 @@ input, select {
 .img-pro4 {
   flex-basis: 50%;
   max-width:300px;
-  max-height:300px;
+  height:300px;
   margin:0px;
   margin-left:5px;
   margin-right: 0px;
   margin-bottom: 10px;
+  margin-top: 10px;
   background-image: url(img/Matt.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -197,11 +202,12 @@ input, select {
 .img-pro5 {
   flex-basis: 50%;
   max-width:300px;
-  max-height:300px;
+  height:300px;
   margin:0px;
   margin-left:5px;
   margin-right: 0px;
   margin-bottom: 10px;
+margin-top: 10px;
   background-image: url(img/Lars.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -211,11 +217,12 @@ input, select {
 .img-pro6 {
   flex-basis: 50%;
   max-width:300px;
-  max-height:300px;
+  height:300px;
   margin:0px;
   margin-left:5px;
   margin-right: 0px;
   margin-bottom: 10px;
+  margin-top: 10px;
   background-image: url(img/Lars.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -230,18 +237,26 @@ input, select {
   height: 300px;
   max-width: 300px;
   flex-basis: 50%;
-  border: solid black 1px;
   margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
 }
 
 .teambox h3 {
+  background-color: rgb(116,109,109);
+  color: white;
   padding: 5px;
+  font-family: arial, sans-serif;
+  font-size: 20px;
   margin:none;
   text-align: center;
   border-bottom: inherit;
 }
 
 .teambox p {
+  font-family: arial, sans-serif;
+  font-size:15px;
   padding:5px;
+  text-indent: 5px;
   text-align: left;
 }
