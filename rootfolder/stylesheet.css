@@ -105,19 +105,24 @@ input, select {
   background-color:#f2f2f2;
   text-align: center;
   width:100%;
-  min-width: 500px;
+  min-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 .header h1 {
   border-bottom: solid black 1px;
+  font-size: 60px;
+  font-family: arial, sans-serif;
   margin-bottom: 10px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
 .header h2 {
   background-color: #f1f1f1;
+  font-size: 40px;
+  font-family: arial, sans-serif;
   border-bottom: solid black 1px;
+  padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
@@ -127,24 +132,96 @@ input, select {
   flex-flow: row wrap;
   justify-content: center;
   width:100%;
-  min-width: 500px;
-  max-width: 1500px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
 }
 
-.img-pro {
+.img-pro1 {
   flex-basis: 50%;
-  max-width:300px;
-  max-height:300px;
-  border: solid black 1px;
+  width:300px;
+  height:300px;
   margin:0px;
   margin-left:5px;
   margin-right: 0px;
   margin-bottom: 10px;
-  object-fit: contain;
+  background-image: url(img/Lars.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
+
+.img-pro2 {
+  flex-basis: 50%;
+  max-width:300px;
+  max-height:300px;
+  margin:0px;
+  margin-left:5px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  background-image: url(img/James.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.img-pro3 {
+  flex-basis: 50%;
+  max-width:300px;
+  max-height:300px;
+  margin:0px;
+  margin-left:5px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  background-image: url(img/Josh.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.img-pro4 {
+  flex-basis: 50%;
+  max-width:300px;
+  max-height:300px;
+  margin:0px;
+  margin-left:5px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  background-image: url(img/Matt.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.img-pro5 {
+  flex-basis: 50%;
+  max-width:300px;
+  max-height:300px;
+  margin:0px;
+  margin-left:5px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  background-image: url(img/Lars.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.img-pro6 {
+  flex-basis: 50%;
+  max-width:300px;
+  max-height:300px;
+  margin:0px;
+  margin-left:5px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  background-image: url(img/Lars.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 
 .teambox{
   margin:0px;
