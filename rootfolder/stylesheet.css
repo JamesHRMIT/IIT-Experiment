@@ -102,6 +102,7 @@ input, select {
 
 /*My Code */
 body{background-color: #9A9A9A;
+  min-width: 300px;
 }
 
 .header {
@@ -111,6 +112,7 @@ body{background-color: #9A9A9A;
   min-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .header h1 {
   border-bottom: solid black 1px;
@@ -126,6 +128,29 @@ body{background-color: #9A9A9A;
   padding-top: 10px;
 }
 
+nav {
+  background-color: rgb(116,109,109);
+  color: white;
+  font-family: arial, sans-serif;
+  width:100%
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding:5px;
+}
+nav a:hover{
+  color:#ff2965;
+}
+.header img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width:250px;
+
+}
 .wrapper {
   background-color:#dfdfdf;
   display:flex;
@@ -138,108 +163,63 @@ body{background-color: #9A9A9A;
   margin-right: auto;
   padding: 0px;
 }
+.combobox{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-basis: 100%;
+}
 
 .img-pro1 {
-  flex-basis: 50%;
-  max-width:300px;
-  height:300px;
-  margin:0px;
-  margin-left:5px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-top: 10px;
   background-image: url(img/Lars.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .img-pro2 {
-  flex-basis: 50%;
-  max-width:300px;
-  height:300px;
-  margin:0px;
-  margin-left:5px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-top: 10px;
   background-image: url(img/James.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .img-pro3 {
-  flex-basis: 50%;
-  max-width:300px;
-  height:300px;
-  margin:0px;
-  margin-left:5px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-top: 10px;
   background-image: url(img/Josh.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .img-pro4 {
-  flex-basis: 50%;
-  max-width:300px;
-  height:300px;
-  margin:0px;
-  margin-left:5px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-top: 10px;
   background-image: url(img/Matt.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .img-pro5 {
-  flex-basis: 50%;
-  max-width:300px;
-  height:300px;
-  margin:0px;
-  margin-left:5px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-margin-top: 10px;
-  background-image: url(img/Lars.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
+  background-image: url(img/Ashton.jpg);
 }
 
-.img-pro6 {
+.img-pro6  {
+  background-image: url(img/Radib.jpg);
+}
+
+.img-pro1, .img-pro2, .img-pro3, .img-pro4, .img-pro5, .img-pro6  {
   flex-basis: 50%;
-  max-width:300px;
-  height:300px;
+  max-width:400px;
+  min-width: 400px;
+  height:400px;
   margin:0px;
-  margin-left:5px;
   margin-right: 0px;
   margin-bottom: 10px;
   margin-top: 10px;
-  background-image: url(img/Lars.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
 }
 
-
 .teambox{
+  position: relative;
   margin:0px;
-  margin-right: 5px;
   margin-left: 0;
-  height: 300px;
-  max-width: 300px;
+  height: 400px;
+  max-width: 400px;
+  min-width: 300px;
   flex-basis: 50%;
   margin-bottom: 10px;
   margin-top: 10px;
   background-color: white;
+
 }
 
 .teambox h3 {
@@ -256,7 +236,83 @@ margin-top: 10px;
 .teambox p {
   font-family: arial, sans-serif;
   font-size:15px;
-  padding:5px;
+  padding:10px;
+  max-width: inherit;
   text-indent: 5px;
   text-align: left;
+}
+
+.teambox a {
+  display:block;
+  font-family: arial, sans-serif;
+  min-width:100%;
+  text-decoration: none;
+  padding-top:10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align:center;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  background-color: #3d3d3d;
+  }
+  .teambox a:hover{
+    color:red;
+  }
+
+@media screen and (max-width:950px){
+  .header img{
+    display:none;
+  }
+}
+
+@media screen and (max-width:799px) {
+
+  .wrapper {
+    flex-flow: column;
+    margin:none;
+  }
+  .combobox {
+    flex-shrink: none;
+  }
+
+  .teambox {
+    margin:0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-width: 400px;
+    padding:0;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background-color: white;
+  }
+
+
+  .img-pro1, .img-pro2, .img-pro3, .img-pro4, .img-pro5, .img-pro6  {
+  height: 400px;
+  min-width: 400px;
+  }
+
+@media screen and (max-width:400px) {
+  .wrapper {
+    margin-left: none;
+    margin-right: none;
+  }
+
+  .teambox {
+    margin:0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-width: 300px;
+    padding:0;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background-color: white;
+  }
+
+  .img-pro1, .img-pro2, .img-pro3, .img-pro4, .img-pro5, .img-pro6  {
+  height: 300px;
+  min-width: 300px;
+  }
+
 }
