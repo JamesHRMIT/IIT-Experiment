@@ -5,6 +5,7 @@ public class Monster {
 	private String name;
 	private int defense;
 	private int health;
+	private int MAXHEALTH;
 	String[] Size = { "Tiny", "Small", "Regular", "Large", "Massive" };
 	String[] Creature = { "Rat", "Goblin", "Naga", "Dragon", "Demon" };
 	private int nameIndex1;
@@ -15,12 +16,21 @@ public class Monster {
 		this.strength = setStrength();
 		this.defense = setDefense();
 		this.health = ((nameIndex2 + 1) * (this.defense + 1));
+		this.MAXHEALTH = this.health;
 		if (strength < 0)
 			strength = 0;
 	}
 
 	public int getDefense() {
 		return this.defense;
+	}
+
+	public void setHealth(int damage) {
+		if (damage <= 0) 
+			damage = 0;
+			
+
+		this.health -= damage;
 	}
 
 	public int getHealth() {
@@ -77,4 +87,32 @@ public class Monster {
 		return name;
 	}
 
+	public int getChoice() {
+		int choice;
+		Random rand = new Random();
+		choice = (rand.nextInt(3)) + 1;
+
+		return choice;
+	}
+
+	public int getRoll(int Option) {
+		Random rand = new Random();
+		int roll = 0;
+		switch (Option) {
+		case 1:
+			roll = (rand.nextInt(this.strength)) + 1;
+			return roll;
+		case 2:
+			roll = (rand.nextInt(this.defense)) + 1;
+			return roll;
+		case 3:
+			roll = (rand.nextInt((this.MAXHEALTH) / 2)) + 1;
+			this.health += roll;
+			if (this.health > this.MAXHEALTH)
+				this.health = this.MAXHEALTH;
+			return roll;
+		default:
+			return roll;
+		}
+	}
 }
